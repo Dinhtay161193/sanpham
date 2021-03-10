@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- sweetalert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/products.css">
+</head>
+
+<body>
+
+    <section class="product container">
+
+        <header class="header">
+            <nav class="navbar navbar-expand-sm navbar-light bg-dark col-sm product__navbar py-4">
+                <div class="container-fluid">
+                    <a class="navbar-brand " href="#"><img src="./images/egany_logo.webp" alt=""></a>
+                    <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+
+                        </ul>
+                        <!-- <div class="d-flex justify-content-center">
+                            <img src="./images/egany_logo.webp" alt="">
+                        </div> -->
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="product__my bg-secondary">
+            <div class="product__my__content col-md-12 d-flex justify-content-center">
+                <img src="./images/picture.jpg" alt="">
+            </div>
+            <h2>My Product</h2>
+            <div class="product__my__form">
+                <div class="row justify-content-center">
+                    <div class="col-6">
+                        <form class="for" onsubmit="handleSubmit(event)">
+                            <input class="form-control me-2" id="txtSearch" type="search" placeholder="Search ID,NAME" aria-label="Search">
+                            <button class="btn btn-outline-light mt-3" onclick="handleSubmit()" type="submit">Search</button>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+            <div class="product__my__cart" id="cart">
+                <h1>Infomation</h1>
+                <div class="row justify-content-center p-1">
+                    <div class=" col-sm-4 col-md-3">
+                        <div class="card" id="cartProduct">
+                        </div>
+                    </div>
+                    <div class="col-12 mt-2 col-sm-12 col-md-9">
+                        <div class="row">
+                            <div class="col-12">
+                                <table class="table table-hover bg-light">
+                                    <thead>
+                                        <tr>
+                                            <th>title</th>
+                                            <th>price</th>
+                                            <th>compare_at_price</th>
+                                            <th>%sale</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="tbodyProduct">
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="col-12">
+                                <table class="table table-hover bg-light">
+                                    <thead>
+                                        <tr>
+                                            <th>inventory_management</th>
+                                            <th>inventory_policy</th>
+                                            <th>inventory_quantity</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="tbodyProducts">
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div id="order" class="col-12"></div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
